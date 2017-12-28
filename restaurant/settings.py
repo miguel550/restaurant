@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dishes',
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    'SCHEMA': 'restaurant.schema.schema'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
